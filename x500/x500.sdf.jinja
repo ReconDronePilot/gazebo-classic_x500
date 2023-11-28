@@ -553,30 +553,6 @@
           <izz>0.001</izz>
         </inertia>
       </inertial>
-      <collision name='cgo3_camera_collision'>
-        <!-- <pose>0.2 0 0.32 0 0 0</pose> -->
-        <geometry>
-          <sphere>
-            <radius>0.035</radius>
-          </sphere>
-        </geometry>
-        <surface>
-          <friction>
-            <ode>
-              <mu>1</mu>
-              <mu2>1</mu2>
-            </ode>
-          </friction>
-          <contact>
-            <ode>
-              <kp>1e+8</kp>
-              <kd>1</kd>
-              <max_vel>0.01</max_vel>
-              <min_depth>0.001</min_depth>
-            </ode>
-          </contact>
-        </surface>
-      </collision>
       <visual name='cgo3_camera_visual'>
         <!-- <pose>0.2 0 0.32 0 0 0</pose> -->
         <geometry>

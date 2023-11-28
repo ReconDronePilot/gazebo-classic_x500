@@ -76,7 +76,7 @@
         <material>
           <diffuse>1.0 1.0 1.0</diffuse>
           <specular>1.0 1.0 1.0</specular>
-          <pbr>
+          <pbr> 
             <metal>
               <albedo_map>model://x500/materials/textures/nxp.png</albedo_map>
             </metal>
