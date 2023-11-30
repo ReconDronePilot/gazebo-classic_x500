@@ -3,7 +3,7 @@
 #./add_gazebo-classic_x500.sh /path/to/PX4_Autopilot
 
 # Add x500 folder in Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/
-cp -r /x500 "$1/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/"
+cp -r x500 "$1/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/"
 
 # Add x500.world in Tools/simulation/gazebo-classic/sitl_gazebo-classic/worlds/
 cp x500.world "$1/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/worlds/"
