@@ -686,12 +686,12 @@
         <always_on>1</always_on>
         <update_rate>10</update_rate>
         <visualize>true</visualize>
-        <plugin name="GstCamera2Plugin" filename="libgazebo_gst_camera_plugin.so">
+        <plugin name="GstCameraPlugin" filename="libgazebo_gst_camera_plugin.so">
             <robotNamespace></robotNamespace>
             <udpHost>127.0.0.1</udpHost>
             <udpPort>{{ gst_udp_port }}+1</udpPort>
         </plugin>
-        <plugin name="Camera2ManagerPlugin" filename="libgazebo_camera_manager_plugin.so">
+        <plugin name="CameraManagerPlugin" filename="libgazebo_camera_manager_plugin.so">
             <robotNamespace>x500</robotNamespace>
             <interval>1</interval>
             <width>3840</width>
