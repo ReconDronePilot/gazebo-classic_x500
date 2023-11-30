@@ -544,7 +544,7 @@
       <pose>0.2 0 0.14 0 0 0</pose>
       <inertial>
         <!-- place holder -->
-        <mass>0.01</mass>
+        <mass>0.1</mass>
         <inertia>
           <ixx>0.001</ixx>
           <ixy>0</ixy>
@@ -638,10 +638,10 @@
 
     <!-- CAMERA 2 -->
     <link name="cgo3_camera2_link">
-      <pose>0.1 0 0.02 0 0 0</pose>
+      <pose>0.15 0 -0.1 0 1.57 0</pose>
       <inertial>
         <!-- place holder -->
-        <mass>0.01</mass>
+        <mass>0.1</mass>
         <inertia>
           <ixx>0.001</ixx>
           <ixy>0</ixy>
@@ -689,7 +689,7 @@
         <plugin name="GstCameraPlugin" filename="libgazebo_gst_camera_plugin.so">
             <robotNamespace></robotNamespace>
             <udpHost>127.0.0.1</udpHost>
-            <udpPort>{{ gst_udp_port }}+1</udpPort>
+            <udpPort>5601</udpPort>
         </plugin>
         <plugin name="CameraManagerPlugin" filename="libgazebo_camera_manager_plugin.so">
             <robotNamespace>x500</robotNamespace>
@@ -697,10 +697,10 @@
             <width>3840</width>
             <height>2160</height>
             <maximum_zoom>8.0</maximum_zoom>
-            <video_uri>{{ video_uri }}</video_uri>
-            <system_id>{{ mavlink_id }}</system_id>
-            <cam_component_id>{{ cam_component_id }}+1</cam_component_id>
-            <mavlink_cam_udp_port>{{ mavlink_cam_udp_port }}+1</mavlink_cam_udp_port>
+            <video_uri>udp://127.0.0.1:5601</video_uri>
+            <system_id>1</system_id>
+            <cam_component_id>100</cam_component_id>
+            <mavlink_cam_udp_port>14530</mavlink_cam_udp_port>
         </plugin>
       </sensor>
     </link>
